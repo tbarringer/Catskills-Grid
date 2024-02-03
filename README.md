@@ -19,7 +19,7 @@ I also needed to create one more Excel sheet for the visualization of filling in
 
 You can find each of the final datasets, in CSV format, in this repo. Now we’re going to start our visualizations. 
 
-## Visualziation 1: Map over Time 
+## Visualization 1: Map over Time 
 
 Our first visualization is a map where a marker pops up on a peak if it was hiked in the current month being shown. I thought this would be the most difficult visualization of the three but it actually ended up being the easiest thanks to an awesome library called folium. This package leverages leaflet js, a mapping package for websites, to create maps with interactions. To make it even better, folium has a plugin where one can create time-series maps very easily – exactly what I needed! The plugin is called TimestampedGeoJson and requires a series of coordinates along with corresponding timestamps to create the visualization. With my master dataset from earlier, creating these datapoints was incredibly easy. Here is the code for this section: 
 
